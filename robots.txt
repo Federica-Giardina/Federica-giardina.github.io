@@ -1,3 +1,0 @@
-User-agent: *
-
-Sitemap: https://federigia.github.io/sitemap.xml
