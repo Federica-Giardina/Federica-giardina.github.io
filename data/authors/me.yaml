@@ -1,0 +1,161 @@
+schema: hugoblox/author/v1
+slug: me
+is_owner: true
+name:
+  display: Federica Giardina
+  given: Federica
+  family: Giardina
+  alternate: ''
+  pronunciation: ''
+  pronouns: ''
+postnominals:
+  - PhD
+status:
+  icon: ''
+role: Assistant Professor of Biostatistics
+bio: |
+  Federica Giardina is an Assistant Professor of Biostatistics at Radboud
+  University Medical Center, within the Department of Health Evidence. She is an
+  infectious-disease modeller and biostatistician who uses mathematics and
+  statistics to study the evolution and transmission dynamics of infectious
+  diseases, with the aim of informing the design of more effective control
+  interventions in public health. She is particularly interested in
+  heterogeneity in infectious-disease dynamics and in informing trial design
+  using individual-based stochastic models and (Bayesian) spatial statistics.
+
+affiliations:
+  - name: Radboud University Medical Center
+    url: https://www.radboudumc.nl/en/research/research-groups/biostatistics/biostatistics-hev
+
+links:
+  - icon: at-symbol
+    url: 'mailto:federica.giardina@radboudumc.nl'
+    label: E-mail Me
+  - icon: brands/x
+    url: https://x.com/federigia
+  - icon: brands/github
+    url: https://github.com/federigia
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/federica-giardina-876785133/
+  - icon: academicons/google-scholar
+    url: https://scholar.google.com/citations?user=bez0HFsAAAAJ&hl=en
+
+interests:
+  - Infectious disease modelling
+  - Biostatistics
+  - Bayesian and spatial statistics
+
+education:
+  - degree: PhD in Epidemiology and Biostatistics (summa cum laude)
+    institution: University of Basel & Swiss TPH
+    end: 2013-12-01
+    summary: |
+      Thesis: "Bayesian spatial models applied to malaria epidemiology."
+  - degree: MSc in Mathematical Engineering
+    institution: Politecnico di Milano
+    end: 2008-07-01
+    summary: |
+      Thesis: "Bayesian first-order autoregressive latent variable models for multiple binary sequences."
+  - degree: BEng in Mathematical Engineering
+    institution: Politecnico di Milano
+    end: 2005-03-01
+
+experience:
+  - role: Assistant Professor of Biostatistics (tenured)
+    org: Radboud University Medical Center, Nijmegen
+    start: 2021-05-01
+    summary: |
+      Research in infectious-disease modelling and biostatistics. Consultancy on
+      Bayesian design and analysis of surveys and clinical trials.
+  - role: Research Fellow
+    org: Erasmus MC, University Medical Center Rotterdam
+    start: 2017-10-01
+    end: 2021-04-30
+    summary: |
+      Mathematical modelling of malaria, HIV and neglected tropical diseases with
+      a focus on diagnostics. Statistical methods and geospatial analyses.
+  - role: Postdoctoral Researcher
+    org: Stockholm University, Karolinska & Los Alamos National Laboratory
+    start: 2014-10-01
+    end: 2017-09-30
+    summary: |
+      HIV incidence and undiagnosed-population estimation with multiple
+      biomarkers, and integration of phylogenetic data to understand HIV
+      transmission networks.
+  - role: Scientific Collaborator
+    org: Swiss TPH & University of Basel
+    start: 2013-11-01
+    end: 2014-10-31
+    summary: |
+      Spatio-temporal modelling and mapping for malaria in sub-Saharan Africa;
+      epidemiological study design and GIS.
+  - role: Biostatistician
+    org: Fundació SIDA i Societat (CEEISCAT), Barcelona
+    start: 2008-09-01
+    end: 2009-10-31
+    summary: |
+      Statistical modelling and data management for HIV/AIDS and STI projects
+      among high-risk groups in Guatemala.
+  - role: Research Assistant
+    org: Pontifical Catholic University of Chile, Santiago
+    start: 2007-07-01
+    end: 2007-12-31
+    summary: |
+      Bayesian models for longitudinal data on bladder-cancer recurrence.
+
+skills:
+  - name: Programming & Statistics
+    items:
+      - label: R
+        level: 5
+      - label: Python
+        level: 4
+      - label: Stata
+        level: 3
+      - label: Stan
+        level: 5
+      - label: JAGS / BUGS
+        level: 4
+  - name: Tools
+    items:
+      - label: LaTeX
+        level: 5
+      - label: ArcGIS
+        level: 4
+      - label: QGIS
+        level: 4
+
+languages:
+  - name: Italian
+    level: 5
+    label: Mother tongue
+  - name: English
+    level: 5
+    label: Fluent
+  - name: Spanish
+    level: 5
+    label: Fluent
+  - name: French
+    level: 3
+    label: Intermediate
+  - name: Dutch
+    level: 3
+    label: Intermediate
+
+awards:
+  - title: Marie Skłodowska-Curie Individual Fellowship (SchiSTOP)
+    awarder: Horizon 2020, European Union
+    date: "2021-01-01"
+    icon: hero/trophy
+  - title: Horizon LEaDing Fellows Postdoc Programme
+    awarder: European Union
+    date: "2019-01-01"
+    icon: hero/trophy
+  - title: Copernicus Masters Ideas Challenge — Winner
+    awarder: "Project: Eye on Malaria"
+    date: "2013-01-01"
+    icon: hero/trophy
+  - title: Master Thesis Award
+    awarder: Politecnico di Milano
+    date: "2007-01-01"
+    icon: hero/trophy
