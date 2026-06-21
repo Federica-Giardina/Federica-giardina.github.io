@@ -31,11 +31,11 @@ sections:
 
       # Avatar customization
       avatar:
-        size: medium # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
+        size: large # 320px – prominent classic-academic hero
         shape: circle # Options: circle (default), square, rounded
   - block: markdown
     content:
-      title: '📚 My Research'
+      title: 'Research'
       subtitle: ''
       text: |-
         My research develops mathematical and statistical models of how infectious diseases spread and evolve, combining individual-based stochastic models with Bayesian and spatial statistics. I work on malaria, HIV, and neglected tropical diseases, and on using models to inform study design and more effective, equitable control interventions.
