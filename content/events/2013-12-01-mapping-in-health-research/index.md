@@ -1,12 +1,14 @@
 ---
 title: Mapping in health research
-date: '2013-12-01'
-all_day: true
-event: Invited seminar
+date: 2013-12-01
 location: Royal Tropical Institute, Amsterdam, Netherlands
 authors:
-- me
+  - me
 tags:
-- Invited talk
+  - Invited talk
 featured: false
+event_start: 2013-12-01
+event_all_day: true
+event_name: Invited seminar
 ---
+
