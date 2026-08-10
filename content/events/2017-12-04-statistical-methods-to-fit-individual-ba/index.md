@@ -1,12 +1,14 @@
 ---
 title: Statistical methods to fit individual-based models for parasitic infections
-date: '2017-12-04'
-all_day: true
-event: Erasmus MC worm club
+date: 2017-12-04
 location: Rotterdam, Netherlands
 authors:
-- me
+  - me
 tags:
-- Invited talk
+  - Invited talk
 featured: false
+event_start: 2017-12-04
+event_all_day: true
+event_name: Erasmus MC worm club
 ---
+
