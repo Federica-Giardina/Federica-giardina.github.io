@@ -1,12 +1,14 @@
 ---
 title: Schistosomiasis expert meeting (organizer and chair)
-date: '2023-04-01'
-all_day: true
-event: Expert meeting
+date: 2023-04-01
 location: Radboud UMC, Nijmegen, Netherlands
 authors:
-- me
+  - me
 tags:
-- Conference / workshop
+  - Conference / workshop
 featured: false
+event_start: 2023-04-01
+event_all_day: true
+event_name: Expert meeting
 ---
+
