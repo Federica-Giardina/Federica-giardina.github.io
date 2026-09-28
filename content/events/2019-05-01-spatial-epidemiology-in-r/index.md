@@ -1,12 +1,14 @@
 ---
 title: Spatial epidemiology in R
-date: '2019-05-01'
-all_day: true
-event: R-Ladies
+date: 2019-05-01
 location: Rotterdam, Netherlands
 authors:
-- me
+  - me
 tags:
-- Invited talk
+  - Invited talk
 featured: false
+event_start: 2019-05-01
+event_all_day: true
+event_name: R-Ladies
 ---
+
