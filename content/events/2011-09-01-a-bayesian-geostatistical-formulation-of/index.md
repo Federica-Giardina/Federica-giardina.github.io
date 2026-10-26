@@ -9,4 +9,5 @@ authors:
 tags:
 - Conference / workshop
 featured: false
+link: https://warwick.ac.uk/fac/sci/statistics/research/crism/workshops/venice2011
 ---

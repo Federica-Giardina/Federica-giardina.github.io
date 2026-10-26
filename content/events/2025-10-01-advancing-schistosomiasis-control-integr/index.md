@@ -9,4 +9,5 @@ authors:
 tags:
 - Conference / workshop
 featured: false
+link: https://community.globalhealthhub.de/index.php/en/events/371-200-years-theodor-bilharz-conference-schistosomiasis-research-in-germany-and-beyond
 ---

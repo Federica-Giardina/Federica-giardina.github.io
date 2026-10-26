@@ -1,0 +1,50 @@
+{{ define "main" }}
+{{- /* Project page. Front matter: subtitle, facts [{label, value}], links [{label, url}], related_dois [..]. */ -}}
+<h1>{{ .Title }}</h1>
+{{- with .Params.subtitle }}<p class="subtitle">{{ . }}</p>{{ end }}
+
+{{- with .Params.facts }}
+<dl class="facts card">
+  {{- range . }}
+  <dt>{{ .label }}</dt>
+  <dd>{{ .value | markdownify }}</dd>
+  {{- end }}
+</dl>
+{{- end }}
+
+<div class="prose">{{ .Content }}</div>
+
+{{- with .Params.figures }}
+<div class="figures">
+  {{- range . }}
+  <figure class="card">
+    <img src="{{ .src | relURL }}" alt="{{ .alt }}" loading="lazy">
+    <figcaption>{{ .caption | markdownify }}</figcaption>
+  </figure>
+  {{- end }}
+</div>
+{{- end }}
+
+{{- with .Params.links }}
+<h2>Links</h2>
+<ul class="project-links">
+  {{- range . }}
+  <li><a class="btn" href="{{ .url }}"><i class="{{ .icon | default "fa-solid fa-arrow-up-right-from-square" }}" aria-hidden="true"></i> {{ .label }}</a></li>
+  {{- end }}
+</ul>
+{{- end }}
+
+{{- with .Params.related_dois }}
+{{- $dois := . }}
+{{- $related := slice }}
+{{- range where site.RegularPages "Section" "publications" }}{{ if in $dois .Params.doi }}{{ $related = $related | append . }}{{ end }}{{ end }}
+{{- with $related }}
+<h2>Publications</h2>
+<ol class="pubs">
+  {{- range sort . "Date" "desc" }}
+  <li>{{ partial "pub.html" . }}</li>
+  {{- end }}
+</ol>
+{{- end }}
+{{- end }}
+{{ end }}

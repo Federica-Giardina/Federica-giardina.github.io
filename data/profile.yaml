@@ -7,10 +7,6 @@ affiliation: Radboud University Medical Center, Nijmegen, the Netherlands
 affiliation_url: https://www.radboudumc.nl/en/research/research-groups/biostatistics/biostatistics-hev
 photo: images/federica-giardina.png
 
-tagline: >-
-  Mathematical models and Bayesian statistics to make infectious-disease
-  control more effective and more equitable.
-
 bio: |-
   I am an infectious-disease modeller and biostatistician. I use mathematics and
   statistics to study the evolution and transmission dynamics of infectious
@@ -21,15 +17,17 @@ bio: |-
 
   I am always open to new collaborations, so please get in touch.
 
-# Research themes shown as cards on the home page. `link` is optional.
+# Research themes shown as cards on the home page. `link`, `image` and `image_credit` are optional.
 themes:
   - title: Malaria and neglected tropical diseases
     text: >-
       Individual-based transmission models of schistosomiasis, soil-transmitted
       helminths and malaria, used to evaluate control and elimination strategies
       and the WHO 2030 targets.
-    link: https://cordis.europa.eu/project/id/846873
+    link: /schistop/
     link_text: SchiSTOP project
+    image: images/papers/malaria-liberia-2014.jpg
+    image_credit: 'Malaria risk, intervention coverage and effects in Liberia. Giardina et al. 2014, [The Lancet Global Health](https://doi.org/10.1016/S2214-109X(14)70300-6), CC BY-NC-ND.'
   - title: Epidemics and health inequalities
     text: >-
       How socio-economic and ethnic inequalities shaped the COVID-19 pandemic in
@@ -37,12 +35,16 @@ themes:
       should look like.
     link: https://www.pandemicpact.org/grants/P29336
     link_text: EQUalS project
+    image: images/papers/covid-inequalities-nl-2026.jpg
+    image_credit: 'COVID-19 infections and hospitalisations across the Netherlands. van Rossum et al. 2026, [Communications Medicine](https://doi.org/10.1038/s43856-026-01891-1), CC BY 4.0.'
   - title: Surveillance and early warning
     text: >-
-      Using routine hospital and general-practice data to detect and respond to
-      infectious-disease threats earlier.
+      Using routine hospital and general-practice data, digital health and AI
+      to detect and respond to infectious-disease threats earlier.
     link: https://www.rivm.nl/en/international-projects/united4surveillance
     link_text: United4Surveillance
+    image: images/papers/gp-episode-of-care-2026.png
+    image_credit: 'An episode of care in general practice. Aguilar Diaz et al. 2026, [Epidemiology & Infection](https://doi.org/10.1017/S0950268826101800), CC BY-NC-ND 4.0.'
   - title: Bayesian methods and trial design
     text: >-
       Bayesian spatial statistics, simulation-based inference (ABC, history
@@ -50,19 +52,26 @@ themes:
       clinical trials, including N-of-1 trials.
     link: https://doi.org/10.1038/s41467-025-63324-2
     link_text: N-of-1 trials in Parkinson's disease
+    image: images/papers/nof1-design-2025.png
+    image_credit: 'Design of the multiple N-of-1 trials. Janssen Daalen et al. 2025, [Nature Communications](https://doi.org/10.1038/s41467-025-63324-2), CC BY 4.0.'
 
+# Links shown as icon buttons on the home page and in the footer (icons: fontawesome.com, jpswalsh.github.io/academicons).
 links:
   - label: Email
     url: mailto:federica.giardina@radboudumc.nl
-    text: federica.giardina@radboudumc.nl
+    icon: fa-solid fa-envelope
   - label: Google Scholar
     url: https://scholar.google.com/citations?user=bez0HFsAAAAJ&hl=en
-  - label: Radboudumc
+    icon: ai ai-google-scholar
+  - label: Radboudumc profile
     url: https://www.radboudumc.nl/en/research/research-groups/biostatistics/biostatistics-hev
+    icon: fa-solid fa-building-columns
   - label: GitHub
     url: https://github.com/federigia
+    icon: fa-brands fa-github
   - label: LinkedIn
     url: https://www.linkedin.com/in/federica-giardina-876785133/
+    icon: fa-brands fa-linkedin
 
 education:
   - degree: PhD in Epidemiology and Biostatistics (summa cum laude)

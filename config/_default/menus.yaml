@@ -5,6 +5,12 @@ main:
   - name: Supervision & Leadership
     url: /supervision/
     weight: 20
+  - name: SchiSTOP
+    url: /schistop/
+    weight: 25
+  - name: TIMERA
+    url: /timera/
+    weight: 27
   - name: Funding
     url: /funding/
     weight: 30

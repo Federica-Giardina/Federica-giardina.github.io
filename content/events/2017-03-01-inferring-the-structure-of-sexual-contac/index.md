@@ -9,4 +9,5 @@ authors:
 tags:
 - Conference / workshop
 featured: false
+link: https://www.thenetworkcenter.nl/Events/Archive/event/113/SEMSTAT-Statistical-Network-Science
 ---

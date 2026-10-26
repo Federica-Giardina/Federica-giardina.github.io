@@ -1,34 +1,32 @@
 {{ define "main" }}
 {{- $p := hugo.Data.profile }}
 <h1>{{ .Title }}</h1>
-<p class="lead"><a class="button" href="{{ site.Params.cv_pdf | relURL }}">Download full CV (PDF)</a></p>
 
-<h2>Academic positions</h2>
-<ul class="dated">
-  {{- range $p.experience }}
-  <li>
-    <span class="yr">{{ .period }}</span>
-    <span><strong>{{ .role }}</strong><br>{{ .org }}{{ with .note }}<br><span class="small muted">{{ . }}</span>{{ end }}</span>
-  </li>
-  {{- end }}
-</ul>
+<div class="cv-grid">
+  <section>
+    <h2>Academic positions</h2>
+    <ul class="cv-list">
+      {{- range $p.experience }}
+      <li>
+        <div class="cv-head"><strong>{{ .role }}</strong><span class="yr">{{ .period }}</span></div>
+        <div>{{ .org }}</div>
+        {{- with .note }}<div class="small muted">{{ . }}</div>{{ end }}
+      </li>
+      {{- end }}
+    </ul>
+  </section>
 
-<h2>Education</h2>
-<ul class="dated">
-  {{- range $p.education }}
-  <li>
-    <span class="yr">{{ .year }}</span>
-    <span><strong>{{ .degree }}</strong><br>{{ .institution }}{{ with .note }}<br><span class="small muted">{{ . }}</span>{{ end }}</span>
-  </li>
-  {{- end }}
-</ul>
-
-<h2>Further information</h2>
-<ul class="dated">
-  <li><span class="yr">Supervision</span><span><a href="{{ "supervision/" | relURL }}">PhD candidates, postdocs and students</a></span></li>
-  <li><span class="yr">Funding</span><span><a href="{{ "funding/" | relURL }}">Grants, fellowships and awards</a></span></li>
-  <li><span class="yr">Teaching</span><span><a href="{{ "teaching/" | relURL }}">Courses taught</a></span></li>
-  <li><span class="yr">Skills</span><span>{{ $p.skills }}</span></li>
-  <li><span class="yr">Languages</span><span>{{ $p.languages }}</span></li>
-</ul>
+  <section>
+    <h2>Education</h2>
+    <ul class="cv-list">
+      {{- range $p.education }}
+      <li>
+        <div class="cv-head"><strong>{{ .degree }}</strong><span class="yr">{{ .year }}</span></div>
+        <div>{{ .institution }}</div>
+        {{- with .note }}<div class="small muted">{{ . }}</div>{{ end }}
+      </li>
+      {{- end }}
+    </ul>
+  </section>
+</div>
 {{ end }}

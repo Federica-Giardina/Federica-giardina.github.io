@@ -18,4 +18,6 @@ publication:
   pages: e601-e615
 featured: true
 doi: 10.1016/S2214-109X(14)70300-6
+image: images/papers/malaria-liberia-2014.jpg
+image_license: CC BY-NC-ND
 ---

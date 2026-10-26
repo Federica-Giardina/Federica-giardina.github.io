@@ -84,14 +84,18 @@ courses:
     place: University of Basel (CH)
     period: 2009 – 2014
 
-# Photos in static/images/teaching/
+# Photos in static/images/teaching/, shown in one row of equal height.
+# ratio = width / height of the image.
 photos:
   - src: images/teaching/kampala-class-2018.jpg
     caption: With PhD students of the Bayesian Methods for Data Analysis course, Makerere University, Kampala, 2018.
-    wide: true
+    ratio: 1.92
   - src: images/teaching/makerere-mathematics-2018.jpg
     caption: Department of Mathematics, Makerere University, Kampala.
+    ratio: 1.42
   - src: images/teaching/phnom-penh-class-2015.jpg
     caption: MSc in Mathematics (CIMPA) class, Royal University of Phnom Penh, 2015.
+    ratio: 1.33
   - src: images/teaching/lecturing.jpg
     caption: Lecturing.
+    ratio: 0.84

@@ -16,4 +16,6 @@ publication:
   pages: e0010279
 featured: false
 doi: 10.1371/journal.pntd.0010279
+image: images/papers/hookworm-2022.png
+image_license: CC BY
 ---

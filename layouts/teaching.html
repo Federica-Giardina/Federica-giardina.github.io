@@ -5,7 +5,8 @@
 
 <div class="gallery">
   {{- range $t.photos }}
-  <figure{{ if .wide }} class="wide"{{ end }}>
+  {{- $r := .ratio | default 1.33 }}
+  <figure style="flex-grow: {{ $r }}; flex-basis: calc({{ $r }} * 8rem)">
     <img src="{{ .src | relURL }}" alt="{{ .caption }}" loading="lazy">
     <figcaption>{{ .caption }}</figcaption>
   </figure>

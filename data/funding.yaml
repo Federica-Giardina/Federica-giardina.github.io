@@ -6,7 +6,7 @@ grants:
   - year: 2026
     title: 'TIMERA (Training Initiative for Modelling Epidemic Response in Africa)'
     funder: Global Health EDCTP3
-    url: https://cordis.europa.eu/project/id/101249114
+    url: /timera/
   - year: 2026
     title: 'Surveillance4NL (United4Surveillance)'
     funder: EU4Health Programme (EU4H), project 101102070
@@ -31,7 +31,7 @@ grants:
   - year: 2021
     title: 'SchiSTOP: Beyond mass drug administration, understanding schistosomiasis dynamics to STOP transmission'
     funder: Marie Skłodowska-Curie Individual Fellowship, Horizon 2020 (EU)
-    url: https://cordis.europa.eu/project/id/846873
+    url: /schistop/
   - year: 2019
     title: Technical feasibility of a sensitive POC-CAA rapid diagnostic test in whole blood and urine to support elimination of schistosomiasis
     funder: Bill & Melinda Gates Foundation with FIND (Foundation for Innovative New Diagnostics)

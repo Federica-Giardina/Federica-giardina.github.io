@@ -15,9 +15,9 @@ modules and no Node/Tailwind. GitHub Actions builds and deploys every push to `m
 | Courses and teaching photos | `data/teaching.yaml` (photos in `static/images/teaching/`) |
 | Leadership and service roles | `data/leadership.yaml` |
 | Book chapters and submitted manuscripts | `data/other_outputs.yaml` |
+| SchiSTOP and TIMERA project pages | `content/schistop.md`, `content/timera.md` |
 | Journal articles | one folder per paper in `content/publications/` |
 | Talks | one folder per talk in `content/events/` |
-| CV PDF | `static/uploads/CV_Giardina_2026.pdf` |
 | Portrait | `static/images/federica-giardina.png` |
 
 ### Adding a publication

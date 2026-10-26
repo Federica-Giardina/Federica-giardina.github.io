@@ -6,7 +6,7 @@
 <ul class="talks">
   {{- range .Pages }}
   <li>
-    <span class="talk-title">{{ .Title }}</span>
+    <span class="talk-title">{{ if .Params.link }}<a href="{{ .Params.link }}">{{ .Title }}</a>{{ else }}{{ .Title }}{{ end }}</span>
     <span class="muted">{{ with .Params.event }}{{ . }}{{ end }}{{ with .Params.location }}, {{ . }}{{ end }}</span>
     {{- with .Params.tags }} <span class="tag">{{ index . 0 }}</span>{{ end }}
   </li>

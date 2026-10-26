@@ -9,4 +9,5 @@ authors:
 tags:
 - Conference / workshop
 featured: false
+link: https://www.newton.ac.uk/event/mip/
 ---

@@ -19,4 +19,6 @@ publication:
   pages: e32625
 featured: false
 doi: 10.1371/journal.pone.0032625
+image: images/papers/senegal-malaria-risk-2012.jpg
+image_license: CC BY
 ---

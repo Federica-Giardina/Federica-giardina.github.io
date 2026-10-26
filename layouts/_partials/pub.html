@@ -1,22 +1,34 @@
-{{- /* One citation. Context: a publication page. */ -}}
+{{- /* One citation, with link buttons and an optional figure thumbnail (front matter `image`). Context: a publication page. */ -}}
 {{- $pub := .Params.publication }}
-<span class="authors">
-  {{- range $i, $a := .Params.authors }}{{ if $i }}, {{ end }}
-    {{- if eq $a "me" }}<strong>Giardina F</strong>
-    {{- else }}{{ $a }}{{ end }}
-  {{- end -}}
-</span>
-<span class="year">({{ .Date.Year }})</span>.
-<span class="title">{{ .Title }}</span>{{ if not (findRE `[?!]$` .Title) }}.{{ end }}
-{{- with $pub }}
-<em>{{ .name }}</em>
-{{- with .volume }} {{ . }}{{ end }}
-{{- with .issue }}({{ . }}){{ end }}
-{{- with .pages }}{{ if or $pub.volume $pub.issue }}:{{ else }}, {{ end }}{{ . }}{{ end }}
-{{- with .note }} ({{ . }}){{ end }}.
-{{- end }}
-<span class="pub-links">
-  {{- with .Params.doi }}<a href="https://doi.org/{{ . }}">doi:{{ . }}</a>{{ end }}
-  {{- with .Params.preprint }}<a href="{{ . }}">Preprint</a>{{ end }}
-  {{- with .Params.link }}<a href="{{ . }}">Find article</a>{{ end }}
-</span>
+{{- $url := "" }}
+{{- with .Params.doi }}{{ $url = printf "https://doi.org/%s" . }}{{ else }}{{ with $.Params.link }}{{ $url = . }}{{ end }}{{ end }}
+<div class="pub">
+  <div class="pub-text">
+    <span class="authors">
+      {{- range $i, $a := .Params.authors }}{{ if $i }}, {{ end }}
+        {{- if eq $a "me" }}<strong>Giardina F</strong>
+        {{- else }}{{ $a }}{{ end }}
+      {{- end -}}
+    </span>
+    <span class="year">({{ .Date.Year }})</span>.
+    <span class="title">{{ .Title }}</span>{{ if not (findRE `[?!]$` .Title) }}.{{ end }}
+    {{- with $pub }}
+    <em>{{ .name }}</em>
+    {{- with .volume }} {{ . }}{{ end }}
+    {{- with .issue }}({{ . }}){{ end }}
+    {{- with .pages }}{{ if or $pub.volume $pub.issue }}:{{ else }}, {{ end }}{{ . }}{{ end }}
+    {{- with .note }} ({{ . }}){{ end }}.
+    {{- end }}
+    <div class="pub-links">
+      {{- with $url }}<a class="btn" href="{{ . }}"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> View</a>{{ end }}
+      {{- with .Params.preprint }}<a class="btn" href="{{ . }}"><i class="fa-regular fa-file-lines" aria-hidden="true"></i> Preprint</a>{{ end }}
+      <a class="btn" href="https://scholar.google.com/scholar?q={{ .Title | urlquery }}"><i class="ai ai-google-scholar" aria-hidden="true"></i> Scholar</a>
+    </div>
+  </div>
+  {{- with .Params.image }}
+  <div class="pub-thumb">
+    <a href="{{ $url | default "#" }}"><img src="{{ . | relURL }}" alt="Figure from the article" loading="lazy"></a>
+    {{- with $.Params.image_license }}<p class="credit">Figure from the article, {{ . }}</p>{{ end }}
+  </div>
+  {{- end }}
+</div>

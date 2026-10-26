@@ -16,4 +16,6 @@ publication:
   pages: e0012464
 featured: true
 doi: 10.1371/journal.pntd.0012464
+image: images/papers/schistop-prevalence-2024.png
+image_license: CC BY
 ---

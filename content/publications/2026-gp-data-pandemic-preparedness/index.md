@@ -19,4 +19,6 @@ publication:
   pages: e113
 featured: false
 doi: 10.1017/S0950268826101800
+image: images/papers/gp-episode-of-care-2026.png
+image_license: CC BY-NC-ND 4.0
 ---

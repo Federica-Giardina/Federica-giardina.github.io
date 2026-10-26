@@ -16,4 +16,6 @@ publication:
   pages: e1005316
 featured: true
 doi: 10.1371/journal.pcbi.1005316
+image: images/papers/hiv-networks-2017.png
+image_license: CC BY
 ---

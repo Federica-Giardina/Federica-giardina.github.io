@@ -18,4 +18,6 @@ publication:
   pages: '8469'
 featured: true
 doi: 10.1038/s41467-025-63324-2
+image: images/papers/nof1-design-2025.png
+image_license: CC BY 4.0
 ---

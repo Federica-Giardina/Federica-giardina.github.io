@@ -17,4 +17,6 @@ publication:
   name: Communications Medicine
 featured: true
 doi: 10.1038/s43856-026-01891-1
+image: images/papers/covid-inequalities-nl-2026.jpg
+image_license: CC BY 4.0
 ---

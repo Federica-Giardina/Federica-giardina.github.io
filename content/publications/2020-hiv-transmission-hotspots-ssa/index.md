@@ -19,4 +19,6 @@ publication:
   pages: e1003042
 featured: true
 doi: 10.1371/journal.pmed.1003042
+image: images/papers/hiv-hotspots-2020.jpg
+image_license: CC BY
 ---

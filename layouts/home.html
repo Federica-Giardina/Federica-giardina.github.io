@@ -2,27 +2,21 @@
 {{- $p := hugo.Data.profile }}
 {{- $people := hugo.Data.supervision.people }}
 {{- $grants := hugo.Data.funding.grants }}
-<section class="intro">
-  <img class="portrait" src="{{ $p.photo | relURL }}" alt="Portrait of {{ $p.name }}" width="220" height="220">
-  <div>
-    <h1>{{ $p.name }}{{ with $p.postnominal }}<span class="postnominal">, {{ . }}</span>{{ end }}</h1>
-    <p class="role">{{ $p.role }}</p>
-    <p class="affil">{{ $p.department }}<br><a href="{{ $p.affiliation_url }}">{{ $p.affiliation }}</a></p>
-    <ul class="contact">
+<section class="hero">
+  <div class="hero-id">
+    <img class="portrait" src="{{ $p.photo | relURL }}" alt="Portrait of {{ $p.name }}" width="280" height="280">
+    <h1>{{ $p.name }}</h1>
+    <ul class="icon-links">
       {{- range $p.links }}
-      <li><a href="{{ .url }}">{{ .text | default .label }}</a></li>
+      <li><a class="icon-btn" href="{{ .url }}" title="{{ .label }}"><i class="{{ .icon }}" aria-hidden="true"></i><span class="sr-only">{{ .label }}</span></a></li>
       {{- end }}
-      <li><a href="{{ site.Params.cv_pdf | relURL }}">CV (PDF)</a></li>
     </ul>
   </div>
-</section>
-
-{{- with $p.tagline }}
-<p class="tagline">{{ . }}</p>
-{{- end }}
-
-<section class="bio">
-  {{ $p.bio | markdownify }}
+  <div class="hero-text">
+    <h2>{{ $p.role }}</h2>
+    <p class="affil">{{ $p.department }}<br><a href="{{ $p.affiliation_url }}">{{ $p.affiliation }}</a></p>
+    <div class="bio">{{ $p.bio | markdownify }}</div>
+  </div>
 </section>
 
 {{- with $p.themes }}
@@ -30,10 +24,16 @@
   <h2>Research themes</h2>
   <div class="themes">
     {{- range . }}
-    <article class="theme">
-      <h3>{{ .title }}</h3>
-      <p>{{ .text }}</p>
-      {{- if .link }}<p class="theme-link"><a href="{{ .link }}">{{ .link_text | default "Read more" }} →</a></p>{{ end }}
+    <article class="theme card">
+      {{- with .image }}
+      <span class="theme-img"><img src="{{ . | relURL }}" alt="" loading="lazy"></span>
+      {{- end }}
+      <div class="theme-body">
+        <h3>{{ .title }}</h3>
+        <p>{{ .text }}</p>
+        {{- if .link }}<p class="theme-link"><a href="{{ .link }}">{{ .link_text | default "Read more" }} →</a></p>{{ end }}
+        {{- with .image_credit }}<p class="credit">{{ . | markdownify }}</p>{{ end }}
+      </div>
     </article>
     {{- end }}
   </div>
