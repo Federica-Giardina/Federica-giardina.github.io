@@ -9,7 +9,7 @@
       <span class="yr">{{ .years }}</span>
     </div>
     {{- /* Student entries already name the degree programme in `institution`. */}}
-    <div class="muted">{{ if in (slice "msc" "bsc") .level }}{{ .institution }}{{ else }}{{ partial "level.html" .level }}{{ with .institution }}, {{ . }}{{ end }}{{ end }}{{ with .role }} — {{ . }}{{ end }}</div>
+    <div class="muted">{{ if in (slice "msc" "bsc") .level }}{{ .institution }}{{ else }}{{ partial "level.html" .level }}{{ with .institution }}, {{ . }}{{ end }}{{ end }}{{ with .role }} ({{ . }}){{ end }}</div>
     {{- with .topic }}<div class="topic">{{ . }}</div>{{ end }}
     {{- with .pub_name }}
     {{- $joint := slice }}

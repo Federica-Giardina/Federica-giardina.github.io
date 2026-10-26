@@ -1,5 +1,5 @@
 ---
-title: NTDs modelling consortium meeting — focus on onchocerciasis
+title: NTDs modelling consortium meeting (focus on onchocerciasis)
 date: '2017-05-01'
 all_day: true
 event: NTD Modelling Consortium

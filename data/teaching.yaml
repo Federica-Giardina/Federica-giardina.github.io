@@ -4,7 +4,7 @@ courses:
     role: Developer and instructor
     programme: Post-academic course
     place: Radboudumc, Nijmegen (NL)
-    period: 2024 – present
+    period: In development
     current: true
   - title: Modelling Infectious Disease Outbreaks
     role: Course developer and instructor
@@ -13,7 +13,7 @@ courses:
     period: 2023 – present
     current: true
   - title: Basic Statistics with R
-    role: Main instructor
+    role: Co-coordinator and instructor
     programme: Master in Molecular Mechanisms of Disease
     place: Radboudumc, Nijmegen (NL)
     period: 2022 – present
@@ -24,7 +24,7 @@ courses:
     period: 2021 – present
     current: true
   - title: Introduction to Bayesian Biostatistics
-    role: Instructor (with E. Lesaffre)
+    role: Instructor, with E. Lesaffre
     programme: Erasmus Summer Programme, NIHES
     place: Erasmus MC, Rotterdam (NL)
     period: 2020

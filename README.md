@@ -39,9 +39,8 @@ featured: true      # also show it on the home page
 ---
 ```
 
-Add `preprint: <url>` for a preprint link. If an author is listed with a matching
-`pub_name` in `data/supervision.yaml`, the site underlines their name and lists the
-paper under that person on the Supervision page.
+Add `preprint: <url>` for a preprint link. If an author matches a `pub_name` in
+`data/supervision.yaml`, the paper is listed under that person on the Supervision page.
 
 ## Local preview
 

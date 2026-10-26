@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {{- $p := hugo.Data.profile }}
-  <title>{{ if .IsHome }}{{ $p.name }} — {{ $p.role }}{{ else }}{{ .Title }} · {{ $p.name }}{{ end }}</title>
+  <title>{{ if .IsHome }}{{ $p.name }}, {{ $p.role }}{{ else }}{{ .Title }} · {{ $p.name }}{{ end }}</title>
   <meta name="description" content="{{ .Description | default site.Params.description }}">
   <meta name="author" content="{{ $p.name }}">
   <meta property="og:title" content="{{ if .IsHome }}{{ $p.name }}{{ else }}{{ .Title }} · {{ $p.name }}{{ end }}">

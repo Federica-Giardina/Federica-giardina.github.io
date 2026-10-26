@@ -7,30 +7,49 @@ affiliation: Radboud University Medical Center, Nijmegen, the Netherlands
 affiliation_url: https://www.radboudumc.nl/en/research/research-groups/biostatistics/biostatistics-hev
 photo: images/federica-giardina.png
 
+tagline: >-
+  Mathematical models and Bayesian statistics to make infectious-disease
+  control more effective and more equitable.
+
 bio: |-
   I am an infectious-disease modeller and biostatistician. I use mathematics and
   statistics to study the evolution and transmission dynamics of infectious
   diseases, with the aim of informing the design of more effective and more
-  equitable control interventions in public health.
+  equitable control interventions in public health. A recurring theme in my
+  work is heterogeneity (between hosts, places and socio-economic groups) and
+  how it should shape surveillance, trial design and policy.
 
-  My group develops individual-based stochastic models and (Bayesian) spatial
-  statistical methods, and applies them to neglected tropical diseases
-  (schistosomiasis and soil-transmitted helminths), malaria, HIV and COVID-19.
-  A recurring theme is heterogeneity — between hosts, places and socio-economic
-  groups — and how it should shape surveillance, trial design and policy.
+  I am always open to new collaborations, so please get in touch.
 
-  I also advise on the Bayesian design and analysis of surveys and clinical
-  trials, including N-of-1 trials.
-
-  I am always open to new collaborations in any of these areas — please get
-  in touch.
-
-interests:
-  - Infectious-disease modelling
-  - Bayesian and spatial statistics
-  - Simulation-based inference (ABC, emulation)
-  - Health inequalities in epidemics
-  - Neglected tropical diseases
+# Research themes shown as cards on the home page. `link` is optional.
+themes:
+  - title: Malaria and neglected tropical diseases
+    text: >-
+      Individual-based transmission models of schistosomiasis, soil-transmitted
+      helminths and malaria, used to evaluate control and elimination strategies
+      and the WHO 2030 targets.
+    link: https://cordis.europa.eu/project/id/846873
+    link_text: SchiSTOP project
+  - title: Epidemics and health inequalities
+    text: >-
+      How socio-economic and ethnic inequalities shaped the COVID-19 pandemic in
+      the Netherlands, and what equitable epidemic response and preparedness
+      should look like.
+    link: https://www.pandemicpact.org/grants/P29336
+    link_text: EQUalS project
+  - title: Surveillance and early warning
+    text: >-
+      Using routine hospital and general-practice data to detect and respond to
+      infectious-disease threats earlier.
+    link: https://www.rivm.nl/en/international-projects/united4surveillance
+    link_text: United4Surveillance
+  - title: Bayesian methods and trial design
+    text: >-
+      Bayesian spatial statistics, simulation-based inference (ABC, history
+      matching and emulation), and Bayesian design and analysis of surveys and
+      clinical trials, including N-of-1 trials.
+    link: https://doi.org/10.1038/s41467-025-63324-2
+    link_text: N-of-1 trials in Parkinson's disease
 
 links:
   - label: Email
@@ -44,8 +63,6 @@ links:
     url: https://github.com/federigia
   - label: LinkedIn
     url: https://www.linkedin.com/in/federica-giardina-876785133/
-  - label: X
-    url: https://x.com/federigia
 
 education:
   - degree: PhD in Epidemiology and Biostatistics (summa cum laude)

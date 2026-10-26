@@ -91,9 +91,17 @@ ul.plain li { margin-bottom: 0.5rem; }
 .affil { color: var(--muted); margin-bottom: 0.75rem; }
 .contact { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 0.25rem 1rem; font-size: 0.95rem; }
 .contact li { overflow-wrap: anywhere; }
-.bio { margin-top: 2rem; max-width: 46rem; }
-.interests { color: var(--muted); font-size: 0.97rem; }
-.interests .label { color: var(--fg); }
+.bio { margin-top: 1.5rem; max-width: 46rem; }
+.tagline { font-family: var(--serif); font-size: 1.4rem; line-height: 1.4; font-weight: 500; margin: 2.25rem 0 0; padding: 0.25rem 0 0.25rem 1.1rem; border-left: 3px solid var(--accent); max-width: 44rem; }
+@media (max-width: 639px) { .tagline { font-size: 1.2rem; } }
+
+/* Home: research themes */
+.themes { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+@media (min-width: 640px) { .themes { grid-template-columns: 1fr 1fr; } }
+.theme { display: flex; flex-direction: column; padding: 1rem 1.15rem; background: var(--soft); border-top: 3px solid var(--accent); }
+.theme h3 { margin: 0 0 0.4rem; font-size: 1.08rem; }
+.theme p { margin: 0 0 0.6rem; font-size: 0.97rem; color: var(--muted); flex: 1; }
+.theme .theme-link { flex: 0; margin: 0; font-size: 0.93rem; font-weight: 600; }
 
 /* People */
 ul.people { list-style: none; padding: 0; margin: 0; }
@@ -123,7 +131,6 @@ ol.pubs { padding-left: 1.4rem; margin: 0 0 1rem; }
 ol.pubs li { margin-bottom: 0.8rem; padding-left: 0.2rem; }
 .pubs .title { font-weight: 600; }
 .pub-links a { font-size: 0.88rem; margin-left: 0.6rem; white-space: nowrap; }
-.supervised { text-decoration: underline; text-decoration-color: var(--mark); text-decoration-thickness: 2px; text-underline-offset: 3px; }
 .year-head { font-family: var(--sans); font-size: 1rem; font-weight: 600; color: var(--muted); margin: 1.5rem 0 0.5rem; }
 
 /* Talks */

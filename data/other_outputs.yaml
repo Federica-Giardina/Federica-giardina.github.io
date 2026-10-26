@@ -1,7 +1,7 @@
 # Outputs that are not journal articles. Journal articles live in content/publications/.
 chapters:
   - citation: 'Giardina F, Sogoba N, Vounatsou P (2015). Bayesian variable selection in semi-parametric and non-stationary geostatistical models: an application to mapping malaria risk in Mali. In: Lawson A, Banerjee S, Haining R, Ugarte L (eds.), <em>Handbook of Spatial Epidemiology</em>. CRC Press.'
-  - citation: 'Franke J, Bauwens I, Deleu J, de Montpellier C, Dlamini S, Gebreslasie M, Giardina F, Siegert F, Vounatsou P (2013). <em>MALAREO MapAtlas — Exploring the spatial dimension of malaria and its explaining environmental factors in Southern Africa by Earth Observation.</em>'
+  - citation: 'Franke J, Bauwens I, Deleu J, de Montpellier C, Dlamini S, Gebreslasie M, Giardina F, Siegert F, Vounatsou P (2013). <em>MALAREO MapAtlas: Exploring the spatial dimension of malaria and its explaining environmental factors in Southern Africa by Earth Observation.</em>'
 
 submitted:
   - citation: 'Malizia V, Scarpino D, Clark J, Lamberton P, Roes K, Giardina F. Calibration of an agent-based model for schistosomiasis using history matching and emulation. <em>Submitted.</em>'

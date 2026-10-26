@@ -9,7 +9,7 @@
     <span class="yr">{{ .year }}</span>
     <div>
       <div class="grant-title">{{ if .url }}<a href="{{ .url }}">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}</div>
-      <div class="muted">{{ .funder }}{{ with .amount }} · {{ . }}{{ end }}</div>
+      <div class="muted">{{ .funder }}</div>
       {{- with .role }}<div class="small">{{ . }}</div>{{ end }}
     </div>
   </li>
@@ -19,7 +19,7 @@
 <h2>Travel awards and scholarships</h2>
 <ul class="dated">
   {{- range hugo.Data.funding.awards }}
-  <li><span class="yr">{{ .year }}</span><span>{{ .title }}{{ with .amount }} <span class="muted">· {{ . }}</span>{{ end }}</span></li>
+  <li><span class="yr">{{ .year }}</span><span>{{ .title }}</span></li>
   {{- end }}
 </ul>
 {{ end }}

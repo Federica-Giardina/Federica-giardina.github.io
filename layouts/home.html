@@ -17,10 +17,28 @@
   </div>
 </section>
 
+{{- with $p.tagline }}
+<p class="tagline">{{ . }}</p>
+{{- end }}
+
 <section class="bio">
   {{ $p.bio | markdownify }}
-  <p class="interests"><span class="label">Research interests</span> {{ delimit $p.interests " · " }}</p>
 </section>
+
+{{- with $p.themes }}
+<section>
+  <h2>Research themes</h2>
+  <div class="themes">
+    {{- range . }}
+    <article class="theme">
+      <h3>{{ .title }}</h3>
+      <p>{{ .text }}</p>
+      {{- if .link }}<p class="theme-link"><a href="{{ .link }}">{{ .link_text | default "Read more" }} →</a></p>{{ end }}
+    </article>
+    {{- end }}
+  </div>
+</section>
+{{- end }}
 
 {{- $current := where $people "status" "current" }}
 <section>
@@ -29,7 +47,7 @@
     {{- range (where $current "level" "postdoc") | append (where $current "level" "!=" "postdoc") }}
     <li>
       {{ if .url }}<a href="{{ .url }}">{{ .name }}</a>{{ else }}<strong>{{ .name }}</strong>{{ end }}
-      <span class="muted">— {{ if eq .level "phd" }}PhD candidate{{ else }}{{ partial "level.html" .level }}{{ end }}, {{ .institution }}, {{ .years }}</span>
+      <span class="muted">({{ if eq .level "phd" }}PhD candidate{{ else }}{{ partial "level.html" .level }}{{ end }}, {{ .institution }}, {{ .years }})</span>
       {{ with .topic }}<br><span class="topic">{{ . }}</span>{{ end }}
     </li>
     {{- end }}
@@ -41,7 +59,7 @@
   <h2>Recent funding</h2>
   <ul class="dated short">
     {{- range first 4 $grants }}
-    <li><span class="yr">{{ .year }}</span><span>{{ if .url }}<a href="{{ .url }}">{{ .title }}</a>{{ else }}{{ .title }}{{ end }} <span class="muted">— {{ .funder }}</span></span></li>
+    <li><span class="yr">{{ .year }}</span><span>{{ if .url }}<a href="{{ .url }}">{{ .title }}</a>{{ else }}{{ .title }}{{ end }} <span class="muted">({{ .funder }})</span></span></li>
     {{- end }}
   </ul>
   <p class="more-link"><a href="{{ "funding/" | relURL }}">All funding →</a></p>

@@ -1,70 +1,55 @@
-# Research funding acquired. `kind: grant` items appear in the main table;
-# `kind: award` items (travel awards, prizes, scholarships) appear in a smaller list.
-#   amount: as text, so totals and currencies can be written freely
+# Research funding acquired. `grants` appear in the main list on the Funding page;
+# `awards` (travel awards, prizes, scholarships) appear in a smaller list below it.
 #   role:   optional (e.g. "consortium member, WP …")
 #   url:    optional project page
 grants:
   - year: 2026
-    title: 'TIMERA — Training Initiative for Modelling Epidemic Response in Africa'
+    title: 'TIMERA (Training Initiative for Modelling Epidemic Response in Africa)'
     funder: Global Health EDCTP3
     url: https://cordis.europa.eu/project/id/101249114
   - year: 2026
-    title: 'Surveillance4NL — United4Surveillance'
+    title: 'Surveillance4NL (United4Surveillance)'
     funder: EU4Health Programme (EU4H), project 101102070
-    amount: €400,000
     role: Consortium member; work package on automated hospital surveillance using federated learning
     url: https://www.rivm.nl/en/international-projects/united4surveillance
   - year: 2025
     title: 'UNITY: Integrating health and social impact into policy and practice'
     funder: ZonMw (Netherlands Organisation for Health Research and Development)
-    amount: €2M (consortium total)
     role: Consortium member; Vulnerabilities work package
     url: https://www.nivel.nl/en/project/unity-unified-integration-health-and-societal-impacts-translation-yield-policy-and-practice
   - year: 2024
     title: Informing the design of transmission-blocking malaria interventions via mathematical modelling
     funder: Radboud Center for Infectious Diseases (RCI), Radboudumc
-    amount: €10,000
   - year: 2023
     title: 'EQUalS: Mathematical modelling to inform an EQUitable and effective response to EpidemicS'
     funder: ZonMw (Netherlands Organisation for Health Research and Development)
-    amount: €250,000
     role: Principal investigator
     url: https://www.pandemicpact.org/grants/P29336
   - year: 2023
     title: Risk of invasive pneumococcal disease in adults
     funder: Radboud Center for Infectious Diseases (RCI), Radboudumc
-    amount: €10,000
   - year: 2021
-    title: 'SchiSTOP: Beyond mass drug administration — understanding schistosomiasis dynamics to STOP transmission'
+    title: 'SchiSTOP: Beyond mass drug administration, understanding schistosomiasis dynamics to STOP transmission'
     funder: Marie Skłodowska-Curie Individual Fellowship, Horizon 2020 (EU)
-    amount: €175,000
     url: https://cordis.europa.eu/project/id/846873
   - year: 2019
     title: Technical feasibility of a sensitive POC-CAA rapid diagnostic test in whole blood and urine to support elimination of schistosomiasis
     funder: Bill & Melinda Gates Foundation with FIND (Foundation for Innovative New Diagnostics)
-    amount: €40,000
   - year: 2019
     title: 'Towards elimination of schistosomiasis: mathematical models and statistical methods to explore novel control interventions'
     funder: Horizon LEaDing Fellows Postdoc Programme (EU)
-    amount: €95,000
   - year: 2013
     title: 'Eye on Malaria: Africa-wide monitoring of environmental suitability for malaria transmission (with Dr Jonas Franke)'
-    funder: Copernicus Masters Ideas Challenge — winner
-    amount: €30,000
+    funder: Copernicus Masters Ideas Challenge (winner)
 
 awards:
   - year: 2017
     title: Travel award, Workshop on Statistical Network Science, Eindhoven (NL)
-    amount: €1,500
   - year: 2016
     title: Travel award, Summer School on Infectious Disease Dynamics, University of Washington, Seattle (US)
-    amount: €2,300
   - year: 2011
     title: Travel award, Statistical Modelling for Biological and Environmental Systems, Venice (IT)
-    amount: €1,700
   - year: 2007
     title: Master thesis award (Politecnico di Milano) and fellowship, Pontificia Universidad Católica de Chile
-    amount: €5,000
   - year: 2006
     title: Erasmus student exchange scholarship, Universidad Autónoma de Madrid (ES)
-    amount: €2,340

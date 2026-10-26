@@ -1,11 +1,8 @@
-{{- /* One citation. Context: a publication page. Supervised co-authors (data/supervision.yaml pub_name) are marked. */ -}}
-{{- $marks := slice }}
-{{- range hugo.Data.supervision.people }}{{ with .pub_name }}{{ $marks = $marks | append . }}{{ end }}{{ end }}
+{{- /* One citation. Context: a publication page. */ -}}
 {{- $pub := .Params.publication }}
 <span class="authors">
   {{- range $i, $a := .Params.authors }}{{ if $i }}, {{ end }}
     {{- if eq $a "me" }}<strong>Giardina F</strong>
-    {{- else if in $marks $a }}<span class="supervised" title="Supervised student or postdoc">{{ $a }}</span>
     {{- else }}{{ $a }}{{ end }}
   {{- end -}}
 </span>
@@ -16,7 +13,7 @@
 {{- with .volume }} {{ . }}{{ end }}
 {{- with .issue }}({{ . }}){{ end }}
 {{- with .pages }}{{ if or $pub.volume $pub.issue }}:{{ else }}, {{ end }}{{ . }}{{ end }}
-{{- with .note }} — {{ . }}{{ end }}.
+{{- with .note }} ({{ . }}){{ end }}.
 {{- end }}
 <span class="pub-links">
   {{- with .Params.doi }}<a href="https://doi.org/{{ . }}">doi:{{ . }}</a>{{ end }}

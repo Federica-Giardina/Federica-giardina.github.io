@@ -1,16 +1,16 @@
 # People I (co-)supervise or have supervised.
 #   status:   current | completed
 #   level:    postdoc | phd | msc | bsc
-#   url:      optional link (profile page, thesis, LinkedIn…) — the name becomes a link
+#   url:      optional link (profile page, thesis, LinkedIn…); the name becomes a link
 #   pub_name: how the person appears in publication author lists (e.g. "Malizia V").
-#             Joint papers are then listed automatically under the person and their
-#             name is marked in the publication list.
+#             Joint papers are then listed automatically under the person.
 people:
   - name: Chelsea Hansen
     level: postdoc
     status: current
     institution: Radboudumc
     years: 2026 – present
+    topic: TIMERA project (Training Initiative for Modelling Epidemic Response in Africa)
     url: ''
   - name: Jessica Aguilar Diaz
     level: phd

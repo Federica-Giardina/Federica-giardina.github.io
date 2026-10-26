@@ -2,11 +2,6 @@
 {{- $pubs := .RegularPages.ByDate.Reverse }}
 {{- $o := hugo.Data.other_outputs }}
 <h1>{{ .Title }}</h1>
-<p class="lead">
-  {{ len $pubs }} peer-reviewed articles. A complete and up-to-date list is on
-  <a href="{{ site.Params.scholar }}">Google Scholar</a>.
-  <span class="supervised">Underlined</span> co-authors are students or postdocs I supervised.
-</p>
 
 <nav class="toc" aria-label="On this page">
   <a href="#articles">Journal articles</a> · <a href="#chapters">Book chapters</a> · <a href="#submitted">Submitted &amp; in preparation</a>
