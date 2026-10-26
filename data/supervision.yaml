@@ -1,0 +1,111 @@
+# People I (co-)supervise or have supervised.
+#   status:   current | completed
+#   level:    postdoc | phd | msc | bsc
+#   url:      optional link (profile page, thesis, LinkedIn…) — the name becomes a link
+#   pub_name: how the person appears in publication author lists (e.g. "Malizia V").
+#             Joint papers are then listed automatically under the person and their
+#             name is marked in the publication list.
+people:
+  - name: Chelsea Hansen
+    level: postdoc
+    status: current
+    institution: Radboudumc
+    years: 2026 – present
+    url: ''
+  - name: Jessica Aguilar Diaz
+    level: phd
+    status: current
+    institution: Radboudumc
+    years: 2023 – 2027
+    topic: Early warning systems for infectious diseases using electronic health records
+    pub_name: Aguilar Diaz JM
+    url: ''
+  - name: Carsten van Rossum
+    level: phd
+    status: current
+    institution: Radboudumc
+    years: 2023 – 2026
+    topic: Infectious disease control and outbreak management using hospital data
+    pub_name: van Rossum C
+    url: ''
+  - name: Yuling Lin
+    level: phd
+    status: current
+    institution: Swiss TPH
+    years: 2024 – 2026
+    topic: Health and economic impact of treatment strategies against soil-transmitted helminthiasis and schistosomiasis
+    url: ''
+  - name: Veronica Malizia
+    level: postdoc
+    status: completed
+    institution: Radboudumc
+    years: 2024
+    topic: Modelling socio-economic heterogeneities in COVID-19 transmission dynamics
+    url: ''
+  - name: Veronica Malizia
+    level: phd
+    status: completed
+    institution: Radboudumc & Erasmus MC
+    years: 2019 – 2023
+    topic: Mathematical modelling for the transmission and control of intestinal parasites
+    pub_name: Malizia V
+    url: ''
+  - name: Rebecca Nalule
+    level: phd
+    status: completed
+    institution: Stockholm University & Makerere University (remote supervision)
+    years: 2017 – 2022
+    topic: Hierarchical models for spatio-temporal processes in data analysis
+    url: ''
+  - name: Sabelo Dlamini
+    level: phd
+    status: completed
+    institution: Swiss TPH
+    years: 2013 – 2016
+    role: daily supervisor
+    url: ''
+  - name: Abbas Adigun
+    level: phd
+    status: completed
+    institution: Swiss TPH
+    years: 2012 – 2016
+    role: daily supervisor
+    topic: Geostatistical models of malaria and associated morbidity among preschool-aged children in Nigeria
+    url: https://edoc.unibas.ch/56970/
+  - name: Natacha Mangenot
+    level: msc
+    status: completed
+    institution: MSc Biomedical Sciences, Radboudumc
+    years: 2026
+    topic: 'Estimating sample size for a Rift Valley fever vaccine efficacy trial in southern Kenya: a serocatalytic modelling approach under unreliable incidence data'
+  - name: Sterre Pauwels
+    level: bsc
+    status: completed
+    institution: BSc Biomedical Sciences, Radboudumc
+    years: 2025
+    topic: Identifying subgroups in patients with a pneumococcal infection with multimorbidity by clustering and network analysis
+  - name: Daphne Drenth
+    level: msc
+    status: completed
+    institution: MSc Biomedical Sciences, Radboudumc
+    years: 2024
+    topic: COVID-19 hospitalisations through the lens of socio-economic and ethnic inequalities
+    pub_name: Drenth D
+  - name: Ecem Arpaci
+    level: bsc
+    status: completed
+    institution: BSc Biochemistry, Imperial College London
+    years: 2023
+    topic: Systematic literature review on anthelmintic resistance genes in human and veterinary parasites
+  - name: Aphelele Mgabisa
+    level: msc
+    status: completed
+    institution: MSc Environmental Sciences, Swiss TPH & University of KwaZulu-Natal
+    years: 2014
+    topic: Spatial methods for malaria surveillance in Limpopo, South Africa
+  - name: Noluthando Ndlovu
+    level: msc
+    status: completed
+    institution: MSc Environmental Sciences, Swiss TPH & University of KwaZulu-Natal
+    years: 2014
+    topic: Spatial methods for malaria surveillance in Jozini, South Africa

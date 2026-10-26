@@ -15,6 +15,8 @@ publication_types:
 - article-journal
 publication:
   name: Epidemiology & Infection
-  note: In press
+  volume: 154
+  pages: e113
 featured: false
+doi: 10.1017/S0950268826101800
 ---

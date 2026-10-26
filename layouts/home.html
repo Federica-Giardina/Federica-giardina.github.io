@@ -1,0 +1,60 @@
+{{ define "main" }}
+{{- $p := hugo.Data.profile }}
+{{- $people := hugo.Data.supervision.people }}
+{{- $grants := hugo.Data.funding.grants }}
+<section class="intro">
+  <img class="portrait" src="{{ $p.photo | relURL }}" alt="Portrait of {{ $p.name }}" width="220" height="220">
+  <div>
+    <h1>{{ $p.name }}{{ with $p.postnominal }}<span class="postnominal">, {{ . }}</span>{{ end }}</h1>
+    <p class="role">{{ $p.role }}</p>
+    <p class="affil">{{ $p.department }}<br><a href="{{ $p.affiliation_url }}">{{ $p.affiliation }}</a></p>
+    <ul class="contact">
+      {{- range $p.links }}
+      <li><a href="{{ .url }}">{{ .text | default .label }}</a></li>
+      {{- end }}
+      <li><a href="{{ site.Params.cv_pdf | relURL }}">CV (PDF)</a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="bio">
+  {{ $p.bio | markdownify }}
+  <p class="interests"><span class="label">Research interests</span> {{ delimit $p.interests " · " }}</p>
+</section>
+
+{{- $current := where $people "status" "current" }}
+<section>
+  <h2>Currently supervising</h2>
+  <ul class="people compact">
+    {{- range (where $current "level" "postdoc") | append (where $current "level" "!=" "postdoc") }}
+    <li>
+      {{ if .url }}<a href="{{ .url }}">{{ .name }}</a>{{ else }}<strong>{{ .name }}</strong>{{ end }}
+      <span class="muted">— {{ if eq .level "phd" }}PhD candidate{{ else }}{{ partial "level.html" .level }}{{ end }}, {{ .institution }}, {{ .years }}</span>
+      {{ with .topic }}<br><span class="topic">{{ . }}</span>{{ end }}
+    </li>
+    {{- end }}
+  </ul>
+  <p class="more-link"><a href="{{ "supervision/" | relURL }}">Supervision &amp; leadership →</a></p>
+</section>
+
+<section>
+  <h2>Recent funding</h2>
+  <ul class="dated short">
+    {{- range first 4 $grants }}
+    <li><span class="yr">{{ .year }}</span><span>{{ if .url }}<a href="{{ .url }}">{{ .title }}</a>{{ else }}{{ .title }}{{ end }} <span class="muted">— {{ .funder }}</span></span></li>
+    {{- end }}
+  </ul>
+  <p class="more-link"><a href="{{ "funding/" | relURL }}">All funding →</a></p>
+</section>
+
+<section>
+  <h2>Selected publications</h2>
+  {{- $featured := where (where site.RegularPages "Section" "publications") "Params.featured" true }}
+  <ol class="pubs">
+    {{- range first 6 $featured.ByDate.Reverse }}
+    <li>{{ partial "pub.html" . }}</li>
+    {{- end }}
+  </ol>
+  <p class="more-link"><a href="{{ "publications/" | relURL }}">All publications →</a></p>
+</section>
+{{ end }}

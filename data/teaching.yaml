@@ -1,0 +1,97 @@
+# Teaching. `current: true` courses are listed first.
+courses:
+  - title: Introduction to Bayesian Thinking
+    role: Developer and instructor
+    programme: Post-academic course
+    place: Radboudumc, Nijmegen (NL)
+    period: 2024 – present
+    current: true
+  - title: Modelling Infectious Disease Outbreaks
+    role: Course developer and instructor
+    programme: Master in Epidemiology
+    place: Radboudumc, Nijmegen (NL)
+    period: 2023 – present
+    current: true
+  - title: Basic Statistics with R
+    role: Main instructor
+    programme: Master in Molecular Mechanisms of Disease
+    place: Radboudumc, Nijmegen (NL)
+    period: 2022 – present
+    current: true
+  - title: Statistics for Clinical Researchers
+    role: Instructor
+    place: Radboudumc, Nijmegen (NL)
+    period: 2021 – present
+    current: true
+  - title: Introduction to Bayesian Biostatistics
+    role: Instructor (with E. Lesaffre)
+    programme: Erasmus Summer Programme, NIHES
+    place: Erasmus MC, Rotterdam (NL)
+    period: 2020
+  - title: Biostatistics
+    role: Course material developer and teaching assistant
+    programme: Master programme, NIHES
+    place: Erasmus MC, Rotterdam (NL)
+    period: 2018
+  - title: Bayesian Methods for Data Analysis
+    role: Main instructor
+    programme: PhD programme in Mathematics and Mathematical Statistics
+    place: Makerere University, Kampala (UG)
+    period: 2018
+  - title: Geographic Information Systems in Health System Strengthening
+    role: Main instructor
+    programme: GIS training for the Association for Reproductive and Family Health and the national TB control programme (Global Fund), for the Royal Tropical Institute (KIT)
+    place: Lagos (NG)
+    period: 2017
+  - title: Statistics for Epidemic Models
+    role: Main instructor
+    programme: MSc in Mathematical Statistics
+    place: Stockholm University (SE)
+    period: 2017
+  - title: Categorical Data Analysis
+    role: Teaching assistant
+    programme: MSc in Mathematical Statistics
+    place: Stockholm University (SE)
+    period: 2015 – 2016
+  - title: Statistics II
+    role: Main instructor
+    programme: MSc in Mathematics (CIMPA)
+    place: Royal University of Phnom Penh (KH)
+    period: 2015
+  - title: Bayesian Biostatistics
+    role: Main instructor
+    programme: MSc in Mathematical Statistics
+    place: Stockholm University (SE)
+    period: 2015
+  - title: Spatial Statistics for Malaria Epidemiology
+    role: Main instructor
+    programme: Training for national malaria control programmes (Mozambique, South Africa, Sudan), MALAREO project
+    place: University of KwaZulu-Natal, Durban (ZA)
+    period: 2013
+  - title: ArcGIS Tutorial
+    role: Main instructor
+    programme: MSc Parasitology and National Malaria Control Programme of Senegal
+    place: Cheikh Anta Diop University, Dakar (SN)
+    period: 2011
+  - title: Fundamentals of Statistics
+    role: Main instructor
+    programme: Health Care and Management in Tropical Countries
+    place: University of Basel (CH)
+    period: 2010 – 2014
+  - title: Biostatistics I & II
+    role: Teaching assistant
+    programme: MSc in Infection Biology / Epidemiology
+    place: University of Basel (CH)
+    period: 2009 – 2014
+
+# Photos in static/images/teaching/
+photos:
+  - src: images/teaching/kampala-class-2018.jpg
+    caption: With PhD students of the Bayesian Methods for Data Analysis course, Makerere University, Kampala, 2018.
+    wide: true
+  - src: images/teaching/makerere-mathematics-2018.jpg
+    caption: Department of Mathematics, Makerere University, Kampala.
+  - src: images/teaching/phnom-penh-class-2015.jpg
+    caption: MSc in Mathematics (CIMPA) class, Royal University of Phnom Penh, 2015.
+  - src: images/teaching/lecturing.jpg
+    caption: Lecturing.

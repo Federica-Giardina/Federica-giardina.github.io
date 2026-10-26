@@ -1,0 +1,30 @@
+{{- /* List of supervised people. Context: dict "people" (slice) "pubs" (publication pages). */ -}}
+{{- $pubs := .pubs }}
+<ul class="people">
+  {{- range .people }}
+  {{- $person := . }}
+  <li>
+    <div class="person-head">
+      <span class="person-name">{{ if .url }}<a href="{{ .url }}">{{ .name }}</a>{{ else }}{{ .name }}{{ end }}</span>
+      <span class="yr">{{ .years }}</span>
+    </div>
+    {{- /* Student entries already name the degree programme in `institution`. */}}
+    <div class="muted">{{ if in (slice "msc" "bsc") .level }}{{ .institution }}{{ else }}{{ partial "level.html" .level }}{{ with .institution }}, {{ . }}{{ end }}{{ end }}{{ with .role }} — {{ . }}{{ end }}</div>
+    {{- with .topic }}<div class="topic">{{ . }}</div>{{ end }}
+    {{- with .pub_name }}
+    {{- $joint := slice }}
+    {{- range $pubs }}{{ if in .Params.authors $person.pub_name }}{{ $joint = $joint | append . }}{{ end }}{{ end }}
+    {{- with $joint }}
+    <details class="joint">
+      <summary>Joint publications ({{ len . }})</summary>
+      <ol class="pubs">
+        {{- range sort . "Date" "desc" }}
+        <li>{{ partial "pub.html" . }}</li>
+        {{- end }}
+      </ol>
+    </details>
+    {{- end }}
+    {{- end }}
+  </li>
+  {{- end }}
+</ul>

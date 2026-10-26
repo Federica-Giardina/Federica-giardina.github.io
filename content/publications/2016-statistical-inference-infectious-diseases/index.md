@@ -12,4 +12,5 @@ publication:
   issue: 1
   pages: 53-70
 featured: false
+link: https://scholar.google.com/scholar?q=%22Introduction+to+statistical+inference+for+infectious+diseases%22+Britton+Giardina
 ---

@@ -12,4 +12,5 @@ publication:
   name: Eurosurveillance
   note: In press
 featured: true
+preprint: https://doi.org/10.31234/osf.io/yge3f_v1
 ---

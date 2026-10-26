@@ -11,4 +11,5 @@ publication_types:
 publication:
   name: Clinical Infectious Diseases
 featured: false
+doi: 10.1093/cid/ciaa933
 ---

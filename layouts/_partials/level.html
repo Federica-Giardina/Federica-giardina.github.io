@@ -1,0 +1,2 @@
+{{- $labels := dict "phd" "PhD" "postdoc" "Postdoc" "msc" "MSc" "bsc" "BSc" -}}
+{{- index $labels . | default . -}}

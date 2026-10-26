@@ -1,0 +1,25 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+<div class="lead">{{ .Content }}</div>
+
+<h2>Grants and fellowships</h2>
+<ul class="grants">
+  {{- range hugo.Data.funding.grants }}
+  <li>
+    <span class="yr">{{ .year }}</span>
+    <div>
+      <div class="grant-title">{{ if .url }}<a href="{{ .url }}">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}</div>
+      <div class="muted">{{ .funder }}{{ with .amount }} · {{ . }}{{ end }}</div>
+      {{- with .role }}<div class="small">{{ . }}</div>{{ end }}
+    </div>
+  </li>
+  {{- end }}
+</ul>
+
+<h2>Travel awards and scholarships</h2>
+<ul class="dated">
+  {{- range hugo.Data.funding.awards }}
+  <li><span class="yr">{{ .year }}</span><span>{{ .title }}{{ with .amount }} <span class="muted">· {{ . }}</span>{{ end }}</span></li>
+  {{- end }}
+</ul>
+{{ end }}

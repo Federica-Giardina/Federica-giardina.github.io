@@ -1,0 +1,11 @@
+<ul class="dated">
+  {{- range . }}
+  <li>
+    <span class="yr">{{ .period }}</span>
+    <span>
+      <strong>{{ .title }}</strong> <span class="muted">— {{ .role }}</span><br>
+      <span class="small">{{ with .programme }}{{ . }}, {{ end }}{{ .place }}</span>
+    </span>
+  </li>
+  {{- end }}
+</ul>

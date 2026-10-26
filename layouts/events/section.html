@@ -1,0 +1,16 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+<p class="lead">Invited talks, seminars and conference presentations.</p>
+{{- range .RegularPages.ByDate.Reverse.GroupByDate "2006" }}
+<h3 class="year-head">{{ .Key }}</h3>
+<ul class="talks">
+  {{- range .Pages }}
+  <li>
+    <span class="talk-title">{{ .Title }}</span>
+    <span class="muted">{{ with .Params.event }}{{ . }}{{ end }}{{ with .Params.location }}, {{ . }}{{ end }}</span>
+    {{- with .Params.tags }} <span class="tag">{{ index . 0 }}</span>{{ end }}
+  </li>
+  {{- end }}
+</ul>
+{{- end }}
+{{ end }}

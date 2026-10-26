@@ -1,0 +1,91 @@
+# Personal profile used on the home page and the CV page.
+name: Federica Giardina
+postnominal: PhD
+role: Assistant Professor of Biostatistics (tenured)
+department: Department for Health Evidence, Biostatistics
+affiliation: Radboud University Medical Center, Nijmegen, the Netherlands
+affiliation_url: https://www.radboudumc.nl/en/research/research-groups/biostatistics/biostatistics-hev
+photo: images/federica-giardina.png
+
+bio: |-
+  I am an infectious-disease modeller and biostatistician. I use mathematics and
+  statistics to study the evolution and transmission dynamics of infectious
+  diseases, with the aim of informing the design of more effective and more
+  equitable control interventions in public health.
+
+  My group develops individual-based stochastic models and (Bayesian) spatial
+  statistical methods, and applies them to neglected tropical diseases
+  (schistosomiasis and soil-transmitted helminths), malaria, HIV and COVID-19.
+  A recurring theme is heterogeneity — between hosts, places and socio-economic
+  groups — and how it should shape surveillance, trial design and policy.
+
+  I also advise on the Bayesian design and analysis of surveys and clinical
+  trials, including N-of-1 trials.
+
+  I am always open to new collaborations in any of these areas — please get
+  in touch.
+
+interests:
+  - Infectious-disease modelling
+  - Bayesian and spatial statistics
+  - Simulation-based inference (ABC, emulation)
+  - Health inequalities in epidemics
+  - Neglected tropical diseases
+
+links:
+  - label: Email
+    url: mailto:federica.giardina@radboudumc.nl
+    text: federica.giardina@radboudumc.nl
+  - label: Google Scholar
+    url: https://scholar.google.com/citations?user=bez0HFsAAAAJ&hl=en
+  - label: Radboudumc
+    url: https://www.radboudumc.nl/en/research/research-groups/biostatistics/biostatistics-hev
+  - label: GitHub
+    url: https://github.com/federigia
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/federica-giardina-876785133/
+  - label: X
+    url: https://x.com/federigia
+
+education:
+  - degree: PhD in Epidemiology and Biostatistics (summa cum laude)
+    institution: University of Basel & Swiss Tropical and Public Health Institute
+    year: 2013
+    note: 'Thesis: “Bayesian spatial models applied to malaria epidemiology”'
+  - degree: MSc in Mathematical Engineering
+    institution: Politecnico di Milano
+    year: 2008
+    note: 'Thesis: “Bayesian first-order autoregressive latent variable models for multiple binary sequences”'
+  - degree: BEng in Mathematical Engineering
+    institution: Politecnico di Milano
+    year: 2005
+
+experience:
+  - role: Assistant Professor of Biostatistics (tenured)
+    org: Radboud University Medical Center, Nijmegen (NL)
+    period: 2021 – present
+    note: Infectious-disease modelling and biostatistics; consultancy on Bayesian design and analysis of surveys and clinical trials.
+  - role: Research Fellow
+    org: Erasmus MC, University Medical Center Rotterdam (NL)
+    period: 2017 – 2021
+    note: Mathematical modelling of malaria, HIV and neglected tropical diseases with a focus on diagnostics; statistical methods and geospatial analyses.
+  - role: Postdoctoral Researcher
+    org: Stockholm University & Karolinska University Hospital (SE); Los Alamos National Laboratory (US)
+    period: 2014 – 2017
+    note: HIV incidence and undiagnosed-population estimation with multiple biomarkers; phylogenetic inference of HIV transmission networks.
+  - role: Scientific Collaborator
+    org: Swiss TPH & University of Basel (CH)
+    period: 2013 – 2014
+    note: Spatio-temporal modelling and mapping of malaria in sub-Saharan Africa; study design and GIS consultancy.
+  - role: Biostatistician
+    org: Fundació SIDA i Societat (CEEISCAT), Barcelona (ES)
+    period: 2008 – 2009
+    note: Statistical modelling and data management for HIV/AIDS and STI projects among high-risk groups in Guatemala.
+  - role: Research Assistant
+    org: Pontifical Catholic University of Chile, Santiago (CL)
+    period: 2007
+    note: Bayesian models for longitudinal data on bladder-cancer recurrence.
+
+languages: Italian (native), English (fluent), Spanish (fluent), French (intermediate), Dutch (intermediate)
+skills: R, Python, Stata, Stan, JAGS/BUGS, LaTeX, ArcGIS, QGIS
+reviewer: Statistics in Medicine, Spatial and Spatio-temporal Epidemiology, Applied Mathematical Modelling, Nature, PLoS One, PLoS Neglected Tropical Diseases, Malaria Journal

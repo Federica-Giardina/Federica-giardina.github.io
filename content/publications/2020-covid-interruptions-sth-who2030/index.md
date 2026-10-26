@@ -12,4 +12,5 @@ publication_types:
 publication:
   name: Transactions of the Royal Society of Tropical Medicine and Hygiene
 featured: false
+doi: 10.1093/trstmh/traa156
 ---

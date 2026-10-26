@@ -14,4 +14,5 @@ publication:
   volume: 11
   pages: 471-488
 featured: false
+doi: 10.1177/1471082X1001100601
 ---

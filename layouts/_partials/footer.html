@@ -1,0 +1,10 @@
+{{- $p := hugo.Data.profile }}
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p>{{ $p.name }} · {{ $p.affiliation }}</p>
+    <p>
+      {{- range $i, $l := $p.links }}{{ if $i }} · {{ end }}<a href="{{ $l.url }}">{{ $l.label }}</a>{{ end -}}
+    </p>
+    <p class="muted">© {{ now.Year }} {{ $p.name }}</p>
+  </div>
+</footer>

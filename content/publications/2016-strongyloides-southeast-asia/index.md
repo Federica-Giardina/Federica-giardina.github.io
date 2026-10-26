@@ -17,4 +17,5 @@ publication:
   volume: 159
   pages: 227-238
 featured: false
+doi: 10.1016/j.actatropica.2015.03.008
 ---
