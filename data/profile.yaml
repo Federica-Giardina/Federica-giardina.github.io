@@ -18,6 +18,7 @@ bio: |-
   I am always open to new collaborations, so please get in touch.
 
 # Research themes shown as cards on the home page. `link`, `image` and `image_credit` are optional.
+# The images are illustrations in static/images/themes/ drawn in the site palette.
 themes:
   - title: Malaria and neglected tropical diseases
     text: >-
@@ -26,8 +27,7 @@ themes:
       and the WHO 2030 targets.
     link: /schistop/
     link_text: SchiSTOP project
-    image: images/papers/malaria-liberia-2014.jpg
-    image_credit: 'Malaria risk, intervention coverage and effects in Liberia. Giardina et al. 2014, [The Lancet Global Health](https://doi.org/10.1016/S2214-109X(14)70300-6), CC BY-NC-ND.'
+    image: images/themes/malaria-ntd.svg
   - title: Epidemics and health inequalities
     text: >-
       How socio-economic and ethnic inequalities shaped the COVID-19 pandemic in
@@ -35,16 +35,14 @@ themes:
       should look like.
     link: https://www.pandemicpact.org/grants/P29336
     link_text: EQUalS project
-    image: images/papers/covid-inequalities-nl-2026.jpg
-    image_credit: 'COVID-19 infections and hospitalisations across the Netherlands. van Rossum et al. 2026, [Communications Medicine](https://doi.org/10.1038/s43856-026-01891-1), CC BY 4.0.'
+    image: images/themes/inequalities.svg
   - title: Surveillance and early warning
     text: >-
       Using routine hospital and general-practice data, digital health and AI
       to detect and respond to infectious-disease threats earlier.
     link: https://www.rivm.nl/en/international-projects/united4surveillance
     link_text: United4Surveillance
-    image: images/papers/gp-episode-of-care-2026.png
-    image_credit: 'An episode of care in general practice. Aguilar Diaz et al. 2026, [Epidemiology & Infection](https://doi.org/10.1017/S0950268826101800), CC BY-NC-ND 4.0.'
+    image: images/themes/surveillance.svg
   - title: Bayesian methods and trial design
     text: >-
       Bayesian spatial statistics, simulation-based inference (ABC, history
@@ -52,8 +50,7 @@ themes:
       clinical trials, including N-of-1 trials.
     link: https://doi.org/10.1038/s41467-025-63324-2
     link_text: N-of-1 trials in Parkinson's disease
-    image: images/papers/nof1-design-2025.png
-    image_credit: 'Design of the multiple N-of-1 trials. Janssen Daalen et al. 2025, [Nature Communications](https://doi.org/10.1038/s41467-025-63324-2), CC BY 4.0.'
+    image: images/themes/bayesian.svg
 
 # Links shown as icon buttons on the home page and in the footer (icons: fontawesome.com, jpswalsh.github.io/academicons).
 links:

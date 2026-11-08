@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Transmission cycles linking people, mosquitoes and freshwater snails">
+  <defs>
+    <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1.3" fill="#d2dfeb"/></pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#e07a5f"/></marker>
+  </defs>
+  <rect width="640" height="360" fill="#eaf1f7"/>
+  <rect width="640" height="360" fill="url(#dots)"/>
+
+  <!-- transmission loops: person <-> mosquito (left), person <-> snail (right) -->
+  <path d="M286 118 C 220 70, 140 100, 140 170" fill="none" stroke="#e07a5f" stroke-width="3" stroke-dasharray="7 6" marker-end="url(#arrow)"/>
+  <path d="M170 236 C 210 270, 270 240, 296 196" fill="none" stroke="#e07a5f" stroke-width="3" stroke-dasharray="7 6" marker-end="url(#arrow)"/>
+  <path d="M354 118 C 420 70, 505 95, 505 160" fill="none" stroke="#e07a5f" stroke-width="3" stroke-dasharray="7 6" marker-end="url(#arrow)"/>
+  <path d="M470 268 C 430 280, 370 250, 344 196" fill="none" stroke="#e07a5f" stroke-width="3" stroke-dasharray="7 6" marker-end="url(#arrow)"/>
+
+  <!-- person -->
+  <circle cx="320" cy="112" r="24" fill="#2c3f51"/>
+  <path d="M278 200 C 278 160, 296 144, 320 144 C 344 144, 362 160, 362 200 Z" fill="#5480a7"/>
+
+  <!-- mosquito -->
+  <g transform="translate(150 200) rotate(-18)">
+    <ellipse cx="6" cy="-16" rx="26" ry="9" fill="#c9d9e8" opacity="0.9" transform="rotate(-35 6 -16)"/>
+    <ellipse cx="18" cy="-14" rx="24" ry="8" fill="#c9d9e8" opacity="0.9" transform="rotate(-10 18 -14)"/>
+    <ellipse cx="10" cy="0" rx="34" ry="7" fill="#2c3f51"/>
+    <circle cx="-28" cy="2" r="7.5" fill="#2c3f51"/>
+    <line x1="-34" y1="5" x2="-58" y2="14" stroke="#2c3f51" stroke-width="2.5" stroke-linecap="round"/>
+    <g stroke="#2c3f51" stroke-width="2" fill="none" stroke-linecap="round">
+      <polyline points="-6,5 -18,22 -26,40"/>
+      <polyline points="4,6 0,26 -4,44"/>
+      <polyline points="14,6 22,26 30,42"/>
+    </g>
+  </g>
+
+  <!-- snail in water -->
+  <path d="M430 262 q 15 -9 30 0 t 30 0 t 30 0 t 30 0 t 30 0" fill="none" stroke="#8fb0cf" stroke-width="3" stroke-linecap="round"/>
+  <path d="M440 284 q 15 -9 30 0 t 30 0 t 30 0 t 30 0" fill="none" stroke="#c9d9e8" stroke-width="3" stroke-linecap="round"/>
+  <path d="M466 240 L 560 240 C 572 240, 578 232, 576 224 C 572 214, 562 216, 556 222 L 540 222 Z" fill="#5480a7"/>
+  <line x1="566" y1="218" x2="574" y2="198" stroke="#5480a7" stroke-width="3" stroke-linecap="round"/>
+  <line x1="572" y1="222" x2="588" y2="206" stroke="#5480a7" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="505" cy="206" r="36" fill="#f2c57c"/>
+  <path d="M505 206 m -4 0 a 4 4 0 1 1 8 0 a 10 10 0 1 1 -18 -2 a 17 17 0 1 1 30 6 a 25 25 0 1 1 -42 -10" fill="none" stroke="#2c3f51" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- parasites -->
+  <g fill="#e07a5f">
+    <ellipse cx="226" cy="76" rx="7" ry="3" transform="rotate(-20 226 76)"/>
+    <ellipse cx="420" cy="78" rx="7" ry="3" transform="rotate(20 420 78)"/>
+    <ellipse cx="404" cy="262" rx="7" ry="3" transform="rotate(-30 404 262)"/>
+    <ellipse cx="236" cy="262" rx="7" ry="3" transform="rotate(25 236 262)"/>
+  </g>
+</svg>

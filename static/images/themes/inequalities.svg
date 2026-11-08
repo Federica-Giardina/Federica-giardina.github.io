@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Epidemic curves that differ in size and timing between neighbourhoods">
+  <defs>
+    <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1.3" fill="#d2dfeb"/></pattern>
+  </defs>
+  <rect width="640" height="360" fill="#eaf1f7"/>
+  <rect width="640" height="360" fill="url(#dots)"/>
+
+  <!-- axes -->
+  <line x1="60" y1="300" x2="590" y2="300" stroke="#2c3f51" stroke-width="3" stroke-linecap="round"/>
+  <line x1="60" y1="300" x2="60" y2="60" stroke="#2c3f51" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- epidemic curves per group: earlier and larger in more deprived areas -->
+  <path d="M60 300 C 140 298, 170 90, 230 90 C 290 90, 320 296, 420 300 Z" fill="#e07a5f" fill-opacity="0.35" stroke="#e07a5f" stroke-width="3.5"/>
+  <path d="M60 300 C 170 299, 220 150, 280 150 C 340 150, 380 297, 480 300 Z" fill="#5480a7" fill-opacity="0.3" stroke="#5480a7" stroke-width="3.5"/>
+  <path d="M60 300 C 200 300, 270 210, 330 210 C 390 210, 440 298, 560 300 Z" fill="#8fb0cf" fill-opacity="0.35" stroke="#8fb0cf" stroke-width="3.5"/>
+
+  <!-- neighbourhoods: houses sized and coloured like the curves -->
+  <g transform="translate(450 70)">
+    <path d="M0 40 L24 16 L48 40 L48 76 L0 76 Z" fill="#e07a5f"/>
+    <rect x="18" y="52" width="12" height="24" fill="#eaf1f7"/>
+    <path d="M60 50 L80 30 L100 50 L100 76 L60 76 Z" fill="#5480a7"/>
+    <rect x="74" y="58" width="11" height="18" fill="#eaf1f7"/>
+    <path d="M112 58 L128 42 L144 58 L144 76 L112 76 Z" fill="#8fb0cf"/>
+    <rect x="123" y="63" width="9" height="13" fill="#eaf1f7"/>
+    <line x1="-6" y1="76" x2="152" y2="76" stroke="#2c3f51" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>
