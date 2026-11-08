@@ -2,9 +2,9 @@
 name: Federica Giardina
 postnominal: PhD
 role: Assistant Professor of Biostatistics (tenured)
-department: Department for Health Evidence, Biostatistics
+department: Biostatistics group, Department of IQ Health
 affiliation: Radboud University Medical Center, Nijmegen, the Netherlands
-affiliation_url: https://www.radboudumc.nl/en/research/research-groups/biostatistics/biostatistics-hev
+affiliation_url: https://radboudumc-biostatistics.github.io/
 photo: images/federica-giardina.png
 
 bio: |-
@@ -60,8 +60,8 @@ links:
   - label: Google Scholar
     url: https://scholar.google.com/citations?user=bez0HFsAAAAJ&hl=en
     icon: ai ai-google-scholar
-  - label: Radboudumc profile
-    url: https://www.radboudumc.nl/en/research/research-groups/biostatistics/biostatistics-hev
+  - label: Radboudumc Biostatistics profile
+    url: https://radboudumc-biostatistics.github.io/people/federica
     icon: fa-solid fa-building-columns
   - label: GitHub
     url: https://github.com/federigia
